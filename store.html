@@ -513,6 +513,17 @@
                     <!-- CTA Primary -->
                     <div class="w-full sm:w-auto">
                         
+                        <div class="w-full sm:w-auto">
+                            <a
+                                target = "_blank" 
+                                href="tel:+1 (931) 241-8671"
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75 translate-x-8': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition border-2 border-transparent rounded-md  text-primary-foreground focus:outline-none hover:bg-primary-darker sm:w-auto bg-primary focus-visible:ring-2 ring-primary ring-opacity-75 ring-offset-2"
+                                >
+                                Give us a Call
+                            </a>
+                        </div>
+                        
                             
                      
                     
@@ -524,14 +535,13 @@
                     <div class="inline-flex w-full ml-3 sm:w-auto">
                         
                         <div class="inline-flex w-full ml-3 sm:w-auto">
-                            <a
-                                target = "_blank" 
-                                href="tel:+1 (931) 241-8671"
+                            <button
+                                @click="contactModalOpen = true"   
                                 :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
                                 >
-                                Give us a Call
-                            </a>
+                                Send us a Text
+                            </button>
                         </div>
                         
                     </div>
@@ -753,15 +763,22 @@
                     <!-- Bottom CTAs -->
                     <div class="d-none p-1 bg-primary sm:bg-gray-50">
                         
-                        
                             <a
                                 target = "_blank" 
                                 href="tel:+1 (931) 241-8671"
-                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
-                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                class="relative block w-full px-5 py-3 font-medium text-center rounded-md  focus:outline-none focus:ring focus:z-10 text-white sm:text-secondary  hover:bg-gray-100"
                                 >
                                 Give us a Call
                             </a>
+                        
+                        
+                            <button
+                                @click="contactModalOpen = true"   
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                >
+                                Send us a Text
+                            </button>
                          
                      
                 
@@ -1365,42 +1382,42 @@
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-131274"
-                                            name="131274"
+                                            id="contact-service-131278"
+                                            name="131278"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-131274" class="ml-3 text-sm font-medium text-gray-700">Local Moves</label>
+                                        <label for="contact-label-service-131278" class="ml-3 text-sm font-medium text-gray-700">Local Moves</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-131275"
-                                            name="131275"
+                                            id="contact-service-131279"
+                                            name="131279"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-131275" class="ml-3 text-sm font-medium text-gray-700">Residential Moves</label>
+                                        <label for="contact-label-service-131279" class="ml-3 text-sm font-medium text-gray-700">Residential Moves</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-131276"
-                                            name="131276"
+                                            id="contact-service-131280"
+                                            name="131280"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-131276" class="ml-3 text-sm font-medium text-gray-700">Long Hauls</label>
+                                        <label for="contact-label-service-131280" class="ml-3 text-sm font-medium text-gray-700">Long Hauls</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-131277"
-                                            name="131277"
+                                            id="contact-service-131281"
+                                            name="131281"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-131277" class="ml-3 text-sm font-medium text-gray-700">Professional Packing</label>
+                                        <label for="contact-label-service-131281" class="ml-3 text-sm font-medium text-gray-700">Professional Packing</label>
                                     </div>
                                 
                             </div>
